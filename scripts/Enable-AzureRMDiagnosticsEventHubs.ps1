@@ -1,4 +1,4 @@
-﻿<#PSScriptInfo
+<#PSScriptInfo
 
 .VERSION 1.0
 
@@ -15,10 +15,9 @@
 .LICENSEURI 
 
 .PROJECTURI 
-#https://blogs.technet.microsoft.com/msoms/2017/01/17/enable-azure-resource-metrics-logging-using-powershell
+http://aka.ms/azmononboarding
 
-.ICONURI 
-https://msdnshared.blob.core.windows.net/media/2017/01/1-OMS-011717.png
+.ICONURI
 
 .EXTERNALMODULEDEPENDENCIES 
 
@@ -27,7 +26,7 @@ https://msdnshared.blob.core.windows.net/media/2017/01/1-OMS-011717.png
 .EXTERNALSCRIPTDEPENDENCIES 
 
 .RELEASENOTES
-  May 1, 2018
+  July 16, 2018
   Intial Release
 #>
 
@@ -101,14 +100,15 @@ https://msdnshared.blob.core.windows.net/media/2017/01/1-OMS-011717.png
 
 .NOTES
    AUTHOR: Jim Britt Senior Program Manager - Azure CAT 
-   LASTEDIT: May 01, 2018
+   LASTEDIT: July 16, 2018
 
-   May 1st, 2018
+   July 16, 2018
    Intial Release
 
 .LINK
     This script posted to and discussed at the following locations:
-        https://www.powershellgallery.com/packages/Enable-AzureRMDiagnosticsEventHubs        
+        https://www.powershellgallery.com/packages/Enable-AzureRMDiagnosticsEventHubs
+        http://aka.ms/azmononboarding
 #>
 param
 (
@@ -362,7 +362,7 @@ function ValidateID
 }
 
 # MAIN SCRIPT
-#Variable Definitions
+# Variable Definitions
 [array]$Resources = @()
 
 # Login to Azure - if already logged in, use existing credentials.
